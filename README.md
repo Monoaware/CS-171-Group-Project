@@ -26,7 +26,7 @@ Our team will be working with PyTorch to construct a CNN that will train on thes
 
 *Nathan:*
 
-**Visualizing and Interpreting Model Runs**
+**Visualizing and Interpreting Model Runs:**
 
 
 
