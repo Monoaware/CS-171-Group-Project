@@ -13,6 +13,9 @@ This repository contains the final project for CS 171 (Introduction to Machine L
 Our project will primarily need a dataset that consists of car images that have been pre-sorted by make and model. Manual data collection of the entire dataset is unrealistic for the scope of this project as it would require too much dedicated time and effort to amass an image gallery large enough for training a neural network. Instead, we will be relying on datasets that have been pre-assembled by others. There are many online sources for car image collections that have already been organized for this purpose. For example, https://www.kaggle.com/datasets/smlztrkk/car-images-dataset has "87,163 images across 20 different car brands and 86 unique models". The data is already organized into 20 car brand folders, and folder contains subfolders with model labels. This dataset will serve as our primary dataset for training. If the need for more data should ever arise, we would ideally locate supplementary datasets that support our target car brands and models and then merge the images into their appropriate subfolders. 
 
 *Nathan:*
+### Dataset Structure
+Like mentioned above, the car image dataset general structure is manufactuer/company (BMW, Volkswagon, Honda, etc.) --> model (3 series, Jetta, Civic) --> images of cars.  Note: the datasets does not have any trims, or different versions of models, (i.e. M3 CS or Civic Type R), so this model will only determine the makes and models.  Also, I noticed that there aren't much car models with under each manufactuer.  For example, under Honda, the only avaliable model in the dataset is the Civic.  Perhaps, we can merge datasets like https://www.kaggle.com/datasets/occultainsights/honda-cars-over-11k-labeled-images to add other models to the dataset.  We do have to be vary that other datasets may contain various trims of the same model car and need to place it under the same model directory.  To meet deadlines, we may only merge a few datasets and keep it small.
+
 ### Model Plan: ⚙️
 *Gloria:*
 
@@ -28,7 +31,7 @@ Our team will be working with PyTorch to construct a CNN that will train on thes
 
 **Visualizing and Interpreting Model Runs:**
 
-
+For visualizing and interpreting models, we will be implementing the Cross Entropy loss function shown in class.  As mentioned in the data processing section, the images will be split into training, testing, and validation data.  In addition, there will be a training loop that computes the number of correct label, as well as the losses for both the training and test data.  To better visualize the losses, we will use pyplot from matplotlib to plot the losses on a graph, displaying the behavior of the line to see if the model overfits or underfits.  Last but not least, we plan to include images from the validation dataset with the predicted/actual label to show the accuracy of the model.  These are our plans to show how well our model performs with the specified datasets.
 
 
 ### Project Timeline: 🗓️
