@@ -50,3 +50,7 @@ For visualizing and interpreting models, we will be implementing the Cross Entro
 | **11/29/25** | Saturday | Set up & complete **analysis & visualization notebook**. Prepare **presentation slides (Google Slides / PowerPoint)**. |
 | **12/2/25** or **12/4/25** | Tuesday / Thursday | **In-class presentations.** |
 | **12/10/25** | Wednesday | **Finalize & submit project.** |
+
+## Future Improvements: 🌠
+
+There are a few things that we'd like to improve on should we have the opportunity to continue working on this project. Firstly, for the data preparation phase, we'd like to run the raw dataset through OpenAI's CLIP model one more time to try and catch as many unusuable images as possible, then manually go through each class set and select high quality images to give our model the best chance at learning different car classes. Secondly, we would have preferred to dedicate more time (and perhaps acquire more computationally power machines) so that our model has the best opportunity to learn from the datasets. As you can tell from our model training and evaluation runs, though the models learn slowly, there is still yet to be convergence in the losses of each model. Thirdly and finally, we'd like to experiment with pre-trained image classification models so that instead of training the model from scratch, we can simply adjust the model to perform better with car classification instead.
